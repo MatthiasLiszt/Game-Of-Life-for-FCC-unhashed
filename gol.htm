@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Game Of Life for FCC unhashed</title>
+<link href="gol.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="react.js"></script>
+<script type="text/javascript" src="react-dom.js"></script>
+<script type="text/javascript" src="babel.js"></script>
+<script type="text/javascript" src="babel.min.js"></script>
+</head>
+<body >
+  <div id="generations">generations: 0</div>
+ <div id="screen" class="screen" >screen to be placed</div>
+  <br></br>
+<input type="button"    id="50x30" value="50x30" onclick="res50x30()">
+<input type="button"    id="70x40" value="70x40" onclick="res70x40()">
+<input type="button"    id="100x60" value="100x60" onclick="res100x60()">
+<br></br>
+<input type="button"    id="slow" value="slow" onclick="slowSpeed()">
+<input type="button"    id="fast" value="fast" onclick="fastSpeed()">
+<input type="button"    id="step" value="step" onclick="oneStep()">
+<input type="button"    id="onOff" value="start/stop" onclick="onOff()">
+<input type="button"    id="clear" value="clear" onclick="clearScreen()">
+<br></br>
+<input type="button" id="glider" value="Glider" onclick="initGlider()">
+<input type="button" id="rpentomino" value="R-Pentomino" onclick="initRPentomino()">
+
+<script type="text/babel" data-presets="es2015,react" src="gol.jsx"></script>
+</body>
+</html>
